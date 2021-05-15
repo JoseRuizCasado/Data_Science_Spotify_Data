@@ -1,0 +1,25 @@
+{
+  "Name": "Vasílis Besíris 'Tourkovasílis'",
+  "Songs": [{
+    "ID": "0OM9aSti0UOwN9yuz1m85y",
+    "Title": "SirtÃ³ prevezÃ¡niko",
+    "ReleaseDate": "1920-01-01",
+    "Year": "1920",
+    "Key": 2,
+    "Mode": 0,
+    "Popularity": 12,
+    "Duration": 4325,
+    "Features": {
+      "Acousticness": 0.65,
+      "Danceability": 0.4127,
+      "Energy": 0.23,
+      "Explicit": 1,
+      "Instrumentalness": 522,
+      "Liveness": 345,
+      "Loudness": -11455,
+      "Speechiness": 936,
+      "Tempo": 12344,
+      "Valence": 0.638
+      }
+    }]
+}
