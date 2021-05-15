@@ -71,4 +71,4 @@ for column in ['tempo', 'loudness', 'duration_ms']:
 
 logging.info('CLEANING finished')
 logging.info('Saving data...')
-data.to_csv('clean_data.csv', index=False)
+data.to_csv('./clean_data.csv', index=False)
