@@ -36,4 +36,4 @@ for index, row in data.iterrows():
 
 logging.info('Saving data to JSON file...')
 with open('data.json', 'w') as output:
-    json.dump(data_json, output, indent=4)
+    json.dump(data_json, output)
