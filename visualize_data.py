@@ -34,12 +34,15 @@ labels = decade_data['decade'].tolist()
 # Plot pie chart of total songs per decade
 values = decade_data['year'].tolist()
 fig, ax = plt.subplots()
+fig.canvas.set_window_title('Figura 1 de 3')
 ax.pie(values, labels=labels, autopct='%1.1f%%')
+ax.title.set_text('Distribución de canciones por década')
 plt.show()
 
 # Plot features time series per decade
 values = decade_data['year'].tolist()
 fig_ser, ax = plt.subplots()
+fig_ser.canvas.set_window_title('Figura 2 de 3')
 acous = ax.plot(labels, decade_data['acousticness'], 'b-o', label='acousticness')
 danc = ax.plot(labels, decade_data['danceability'], 'r-o', label='danceability')
 ener = ax.plot(labels, decade_data['energy'], 'g-o', label='energy')
@@ -65,10 +68,14 @@ graphs = {
     liv_legend: liv
 }
 plt.connect('pick_event', on_pick)
+ax.title.set_text('Evolución de las características por década')
 plt.show()
 
 # Plot loudness
 fig, ax = plt.subplots()
+fig.canvas.set_window_title('Figura 3 de 3')
 ax.bar(labels, decade_data['loudness'], width=30)
 ax.invert_yaxis()
+
+ax.title.set_text('Volumen en decibelios por década')
 plt.show()
